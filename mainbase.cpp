@@ -193,7 +193,7 @@ int main() {
     //Asignar Viewport
     glViewport(0, 0, BufferWidth, BufferHeight);
 
-    // 1. Semilla aleatoria
+    // Semilla aleatoria
     srand(static_cast<unsigned int>(time(NULL)));
 
     //Llamada a las funciones creadas antes del main
