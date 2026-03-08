@@ -184,7 +184,8 @@ int main() {
 
 		glm::mat4 modelBase = glm::mat4(1.0f);
 		modelBase = glm::translate(modelBase, glm::vec3(0.0f, -0.5f, -5.0f));
-		modelBase = glm::rotate(modelBase, (float)glfwGetTime() * 0.5f, glm::vec3(0.0f, 1.0f, 0.0f));
+		//descomentar la sig linea para rotar la piramide 
+		//modelBase = glm::rotate(modelBase, (float)glfwGetTime() * 0.5f, glm::vec3(0.0f, 1.0f, 0.0f));
 
 		// color base de piramides
 		glUniform3f(uniformColor, 0.1f, 0.1f, 0.1f);
