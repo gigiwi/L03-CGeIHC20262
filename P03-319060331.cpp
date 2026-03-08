@@ -56,7 +56,7 @@ void CrearPiramideTriangular() {
 	};
 	Mesh* piramide = new Mesh();
 	piramide->CreateMesh(Piramidetrian_vertices, indices, 12, 12);
-	meshList.push_back(piramide); // Índice 0
+	meshList.push_back(piramide); 
 }
 
 // Forma para la parte de las piramides invertidas
@@ -200,7 +200,7 @@ int main() {
 			meshList[1]->RenderMesh();
 		}
 
-		// definicion de los colores de cada cara (para que dejen espacio para las esquinas negras
+		// definicion de los colores de cada cara (para que dejen espacio para las esquinas negras)
 		float distCara = 0.612f;
 		float tiltAngle = -19.471f;
 
