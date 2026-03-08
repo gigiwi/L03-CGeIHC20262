@@ -1,5 +1,10 @@
 /*Practica 3: Modelado geométrico
-* Alumno Reyes HErrera Vanessa Giselle
+* Alumna: Reyes Herrera Vanessa Giselle
+* 
+* Ultima modificacion: 07/03/26
+* Codigo main modificado. 
+* (Se uso el codigo de camara brindado por el profesor)
+* 
 */
 #include <stdio.h>
 #include <string.h>
