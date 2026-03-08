@@ -59,7 +59,7 @@ void CrearPiramideTriangular() {
 	meshList.push_back(piramide); // Índice 0
 }
 
-// Forma para la parte de las
+// Forma para la parte de las piramides invertidas
 void CrearPiramideInvertida() {
 	unsigned int indices[] = {
 		0, 1, 2,  3, 5, 4,  
@@ -188,7 +188,7 @@ int main() {
 		//modelBase = glm::rotate(modelBase, (float)glfwGetTime() * 0.5f, glm::vec3(0.0f, 1.0f, 0.0f));
 
 		// color base de piramides
-		glUniform3f(uniformColor, 0.1f, 0.1f, 0.1f);
+		glUniform3f(uniformColor, 0.1f, 0.1f, 0.1f); //color negro/gris
 		for (int i = 0; i < 10; i++) {
 			glm::mat4 model = glm::translate(modelBase, posPiramides[i]);
 			glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
@@ -200,11 +200,11 @@ int main() {
 			meshList[1]->RenderMesh();
 		}
 
-		// definicion de los colores de cada cara
+		// definicion de los colores de cada cara (para que dejen espacio para las esquinas negras
 		float distCara = 0.612f;
 		float tiltAngle = -19.471f;
 
-		// cara rojo
+		// cara roja
 		glm::mat4 caraDer = glm::rotate(modelBase, glm::radians(60.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 		caraDer = glm::rotate(caraDer, glm::radians(tiltAngle), glm::vec3(1.0f, 0.0f, 0.0f));
 		caraDer = glm::translate(caraDer, glm::vec3(0.0f, 0.0f, distCara));
