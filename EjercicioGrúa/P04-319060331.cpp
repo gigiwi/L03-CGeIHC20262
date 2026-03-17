@@ -506,11 +506,9 @@ int main()
 			if (i == 2) anguloLlantaActual = mainWindow.getLlanta3();
 			if (i == 3) anguloLlantaActual = mainWindow.getLlanta4();
 
-			// PRIMERO: rotamos el cilindro para la llanta 90 grados para acostarlo
+			
 			model = glm::rotate(model, glm::radians(90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-
-			// SEGUNDO: Giramos sobre su nuevo eje local (Y) usando la tecla asignada
-			model = glm::rotate(model, glm::radians(anguloLlantaActual), glm::vec3(0.0f, 1.0f, 0.0f));
+			model = glm::rotate(model, glm::radians(anguloLlantaActual), glm::vec3(0.0f, 1.0f, 0.0f)); //movimiento para girar de las 4 llantas
 
 			modelaux = model;
 			model = glm::scale(model, glm::vec3(2.0f, 4.0f, 2.0f));
