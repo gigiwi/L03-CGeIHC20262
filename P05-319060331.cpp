@@ -1,5 +1,11 @@
-/*Práctica 5: Optimización y Carga de Modelos
+/*Práctica 5: Optimización y Carga de Modelos - Modelo Coche
 * Alumna: Reyes Herrera Vanessa Giselle
+* Ultima modificacion: 28/03/26
+* 
+* Teclas para los movimientos del coche:
+* F y G para llantas 
+* E y R para cofre coche
+* Flechas arriba y abajo para avanzar y retroceder el coche 
 */
 //para cargar imagen
 #define STB_IMAGE_IMPLEMENTATION
@@ -185,7 +191,7 @@ int main()
 
 
 		// llantas --------
-		color = glm::vec3(0.2f, 0.2f, 0.2f);
+		color = glm::vec3(0.2f, 0.2f, 0.2f);//gris
 		glUniform3fv(uniformColor, 1, glm::value_ptr(color));
 
 		// llanta delantera izq
